@@ -1,3 +1,8 @@
+<!-- Header.vue -->
 <template>
-    <h2>Expense Tracker App</h2>
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Expense Tracker</a>
+        </div>
+    </nav>
 </template>
