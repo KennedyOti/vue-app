@@ -1,19 +1,21 @@
-<!-- Balance.vue -->
 <template>
-    <div class="card text-center bg-dark text-white">
-        <div class="card-body">
-            <h4 class="text-success">Your Balance</h4>
-            <h1>${{ total }}</h1>
+    <div class="card mt-4">
+        <div class="card-header bg-success text-white">
+            <h4>Your Balance</h4>
+        </div>
+        <div class="card-body text-center">
+            <h1 class="text-success">${{ balance }}</h1>
         </div>
     </div>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
+
 const props = defineProps({
-    total: {
+    balance: {
         type: Number,
         required: true,
-    },
+    }
 });
 </script>

@@ -1,4 +1,3 @@
-<!-- TransactionList.vue -->
 <template>
     <div class="card mt-4">
         <div class="card-header bg-success text-white">
@@ -8,8 +7,11 @@
             <li v-for="transaction in transactions" :key="transaction.id"
                 class="list-group-item d-flex justify-content-between align-items-center bg-light">
                 {{ transaction.text }}
-                <span class="text-danger">{{ transaction.amount }}</span>
-                <button class="btn btn-danger btn-sm">&times;</button>
+                <span :class="transaction.amount > 0 ? 'text-success' : 'text-danger'">
+                    {{ transaction.amount }}
+                </span>
+                <button class="btn btn-danger btn-sm"
+                    @click="$emit('delete-transaction', transaction.id)">&times;</button>
             </li>
         </ul>
     </div>
