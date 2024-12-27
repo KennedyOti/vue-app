@@ -4,7 +4,7 @@
             <h4>Your Balance</h4>
         </div>
         <div class="card-body text-center">
-            <h1 class="text-success">${{ balance }}</h1>
+            <h1 class="text-success">KSH{{ balance }}</h1>
         </div>
     </div>
 </template>

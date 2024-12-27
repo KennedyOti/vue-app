@@ -4,7 +4,7 @@
             <div class="card border-success mb-3">
                 <div class="card-header bg-success text-white">Income</div>
                 <div class="card-body text-success">
-                    <h5 class="card-title">{{ income }}</h5>
+                    <h5 class="card-title">KSH{{ income }}</h5>
                 </div>
             </div>
         </div>
@@ -12,7 +12,7 @@
             <div class="card border-danger mb-3">
                 <div class="card-header bg-danger text-white">Expenses</div>
                 <div class="card-body text-danger">
-                    <h5 class="card-title">{{ Math.abs(expenses) }}</h5>
+                    <h5 class="card-title">KSH{{ Math.abs(expenses) }}</h5>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
                 class="list-group-item d-flex justify-content-between align-items-center bg-light">
                 {{ transaction.text }}
                 <span :class="transaction.amount > 0 ? 'text-success' : 'text-danger'">
-                    {{ transaction.amount }}
+                    KSH{{ transaction.amount }}
                 </span>
                 <button class="btn btn-danger btn-sm"
                     @click="$emit('delete-transaction', transaction.id)">&times;</button>
